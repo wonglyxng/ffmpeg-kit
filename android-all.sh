@@ -10,11 +10,11 @@ mv prebuilt/bundle-android-aar-*/ffmpeg-kit/ffmpeg-kit.aar ffmpeg-kit-min.aar
 mv prebuilt/bundle-android-aar-*/ffmpeg-kit/ffmpeg-kit.aar ffmpeg-kit-min-gpl.aar
 
 ./android.sh --enable-android-media-codec --enable-android-zlib --disable-arm-v7a --disable-arm-v7a-neon --disable-x86 --disable-x86-64 --disable-x86-64 \
-  --enable-{gmp,gnutls}
+  --enable-{gmp,openssl}
 mv prebuilt/bundle-android-aar-*/ffmpeg-kit/ffmpeg-kit.aar ffmpeg-kit-https.aar
 
 ./android.sh --enable-android-media-codec --enable-android-zlib --disable-arm-v7a --disable-arm-v7a-neon --disable-x86 --disable-x86-64 --disable-x86-64 \
-  --enable-{gmp,gnutls} \
+  --enable-{gmp,openssl} \
   --enable-{gpl,x264,x265,xvidcore,libvidstab}
 mv prebuilt/bundle-android-aar-*/ffmpeg-kit/ffmpeg-kit.aar ffmpeg-kit-https-gpl.aar
 
@@ -27,10 +27,10 @@ mv prebuilt/bundle-android-aar-*/ffmpeg-kit/ffmpeg-kit.aar ffmpeg-kit-audio.aar
 mv prebuilt/bundle-android-aar-*/ffmpeg-kit/ffmpeg-kit.aar ffmpeg-kit-video.aar
 
 ./android.sh --enable-android-media-codec --enable-android-zlib --disable-arm-v7a --disable-arm-v7a-neon --disable-x86 --disable-x86-64 --disable-x86-64 \
-  --enable-{dav1d,fontconfig,freetype,fribidi,gmp,gnutls,kvazaar,lame,libass,libiconv,libilbc,libtheora,libvorbis,libvpx,libwebp,libxml2,opencore-amr,opus,shine,snappy,soxr,speex,twolame,vo-amrwbenc,zimg}
+  --enable-{dav1d,fontconfig,freetype,fribidi,gmp,openssl,kvazaar,lame,libass,libiconv,libilbc,libtheora,libvorbis,libvpx,libwebp,libxml2,opencore-amr,opus,shine,snappy,soxr,speex,twolame,vo-amrwbenc,zimg}
 mv prebuilt/bundle-android-aar-*/ffmpeg-kit/ffmpeg-kit.aar ffmpeg-kit-full.aar
 
 ./android.sh --enable-android-media-codec --enable-android-zlib --disable-arm-v7a --disable-arm-v7a-neon --disable-x86 --disable-x86-64 --disable-x86-64 \
   --enable-{gpl,x264,x265,xvidcore,libvidstab} \
-  --enable-{dav1d,fontconfig,freetype,fribidi,gmp,gnutls,kvazaar,lame,libass,libiconv,libilbc,libtheora,libvorbis,libvpx,libwebp,libxml2,opencore-amr,opus,shine,snappy,soxr,speex,twolame,vo-amrwbenc,zimg}
+  --enable-{dav1d,fontconfig,freetype,fribidi,gmp,openssl,kvazaar,lame,libass,libiconv,libilbc,libtheora,libvorbis,libvpx,libwebp,libxml2,opencore-amr,opus,shine,snappy,soxr,speex,twolame,vo-amrwbenc,zimg}
 mv prebuilt/bundle-android-aar-*/ffmpeg-kit/ffmpeg-kit.aar ffmpeg-kit-full-gpl.aar
