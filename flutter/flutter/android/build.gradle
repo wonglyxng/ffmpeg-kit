@@ -6,6 +6,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        mavenLocal()
     }
 
     dependencies {
@@ -14,10 +15,11 @@ buildscript {
     }
 }
 
-allprojects {
+rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
+        mavenLocal()
     }
 }
 
@@ -55,7 +57,9 @@ android {
     }
 
     dependencies {
-        implementation("androidx.annotation:annotation:1.9.1")
-        implementation("com.arthenica:ffmpeg-kit-https:6.0-2.LTS")
+        implementation('androidx.annotation:annotation:1.5.0')
+        implementation('com.arthenica:ffmpeg-kit-full-gpl:6.1.2') // Dependency from local Maven repository
+        implementation('com.arthenica:smart-exception-java:0.2.1')
+        implementation('com.arthenica:smart-exception-common:0.2.1')
     }
 }
